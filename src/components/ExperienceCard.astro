@@ -25,7 +25,7 @@ const { company, logo, role, startDate, endDate, bullets, tags } = Astro.props;
     </div>
   </div>
   <p class="font-semibold text-gray-800 dark:text-gray-200 mb-3">{role}</p>
-  <ul class="list-disc list-inside space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
+  <ul class="list-disc pl-5 space-y-1.5 text-sm text-gray-600 dark:text-gray-400">
     {bullets.map((bullet) => (
       <li set:html={bullet} />
     ))}
