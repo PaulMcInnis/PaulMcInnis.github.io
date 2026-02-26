@@ -14,7 +14,7 @@ interface Props {
 const { company, logo, role, startDate, endDate, bullets, tags } = Astro.props;
 ---
 
-<div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+<div class="scroll-reveal opacity-0 translate-y-6 transition-all duration-700 ease-out bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg hover:-translate-y-1">
   <div class="flex items-center gap-4 mb-4">
     <img src={logo} alt={company} class="w-12 h-12 rounded object-cover" />
     <div>
