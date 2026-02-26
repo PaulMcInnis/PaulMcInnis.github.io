@@ -1,0 +1,32 @@
+---
+import SectionHeading from './SectionHeading.astro';
+import education from '../data/education.json';
+---
+
+<section class="py-12 px-6">
+  <div class="max-w-4xl mx-auto">
+    <SectionHeading title="Education" />
+    {education.map((school) => (
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">{school.school}</h3>
+        <div class="space-y-6">
+          {school.degrees.map((degree) => (
+            <div>
+              <p class="text-lg font-medium text-gray-800 dark:text-gray-200">
+                {degree.name}
+                <span class="text-sm text-gray-500 dark:text-gray-400 ml-2">
+                  ({degree.startYear} - {degree.endYear})
+                </span>
+              </p>
+              <ul class="list-disc list-inside space-y-1 mt-2 text-sm text-gray-600 dark:text-gray-400">
+                {degree.bullets.map((bullet) => (
+                  <li set:html={bullet} />
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>

@@ -1,0 +1,30 @@
+---
+import social from '../data/social.json';
+---
+
+<section class="relative bg-gradient-to-br from-accent via-green-100 to-emerald-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="mb-6">
+      <img
+        src="/img/headshot.jpg"
+        alt="Paul McInnis"
+        class="w-56 h-56 rounded-full mx-auto object-cover shadow-xl ring-4 ring-white dark:ring-gray-700 hover:scale-105 transition-transform duration-300"
+      />
+    </div>
+    <h1 class="text-5xl font-bold text-gray-900 dark:text-white mb-2">Paul McInnis</h1>
+    <h2 class="text-xl text-gray-600 dark:text-gray-400 mb-8">Full-Stack, Web3, ML</h2>
+    <nav class="flex justify-center gap-6">
+      {social.map((link) => (
+        <a
+          href={link.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+        >
+          <i class={`${link.iconPrefix} ${link.icon}`}></i>
+          <span class="text-sm font-medium">{link.name}</span>
+        </a>
+      ))}
+    </nav>
+  </div>
+</section>
