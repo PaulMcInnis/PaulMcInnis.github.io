@@ -12,7 +12,7 @@
       "Prototyped and validated the DIY Guards design with a launch customer within 1 month",
       "Built an AI-powered code writing assistant for DIY Guards and authored all documentation",
       "Researched, designed, and shipped an AI/ML-powered Suspicious Transaction guard in 1.5 months with zero sev0 issues at launch",
-      "Suspicious Transaction guard reached 30% of all guard invocations at only 12% of execution time within two weeks, driving 3-4 high-value client sign-ons"
+      "Suspicious Transaction guard quickly became one of the most-used guards on the platform, driving multiple high-value client sign-ons"
     ],
     "tags": ["Python", "FastAPI", "SQLAlchemy", "PostgreSQL", "TimescaleDB", "Redis", "Docker", "GCP", "Machine Learning", "AI", "Blockchain Security", "Solidity", "Web3", "Pydantic", "Alembic"]
   },
