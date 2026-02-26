@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Email",
+    "url": "mailto:paulmcinnis99@gmail.com",
+    "icon": "fa-envelope",
+    "iconPrefix": "fas"
+  },
+  {
+    "name": "LinkedIn",
+    "url": "https://www.linkedin.com/in/paul-mcinnis-7a63173b",
+    "icon": "fa-linkedin-in",
+    "iconPrefix": "fab"
+  },
+  {
+    "name": "Github",
+    "url": "https://github.com/PaulMcInnis",
+    "icon": "fa-github",
+    "iconPrefix": "fab"
+  },
+  {
+    "name": "Music",
+    "url": "https://www.instagram.com/paul.mcinnis.music",
+    "icon": "fa-instagram",
+    "iconPrefix": "fab"
+  }
+]

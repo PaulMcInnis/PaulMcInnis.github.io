@@ -1,0 +1,29 @@
+[
+  {
+    "school": "University of Waterloo Ontario",
+    "degrees": [
+      {
+        "name": "Ba.Sc Mechanical and Mechatronics Engineering",
+        "startYear": "2010",
+        "endYear": "2015",
+        "bullets": [
+          "Co-op program",
+          "University of Waterloo Merit Scholarship",
+          "Undergraduate Student Research Award, Natural Sciences and Engineering Research Council of Canada (NSERC)",
+          "Final-year project: AWD, winterized, E-Bike (Frost-E-Bike)"
+        ]
+      },
+      {
+        "name": "Ma.Sc Mechanical and Mechatronics Engineering",
+        "startYear": "2015",
+        "endYear": "2017",
+        "bullets": [
+          "Hybrid powertrain research and development",
+          "Advanced Driver Assistance Systems (ADAS) research and development",
+          "In partnership with the EcoCar Advanced Vehicle Technology Competition (AVTC)",
+          "Thesis: <a href=\"https://uwspace.uwaterloo.ca/handle/10012/12230\" target=\"_blank\">Intelligent Vehicle Development through Scalable Data Collection Processes and Simulation</a>"
+        ]
+      }
+    ]
+  }
+]
