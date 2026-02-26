@@ -1,0 +1,141 @@
+[
+  {
+    "title": "Berachain",
+    "url": "https://www.berachain.com/",
+    "startDate": "October 2024",
+    "endDate": "March 2025",
+    "bullets": [
+      "Integrated the v2 Balancer DEX into the Berachain ecosystem as the BEX",
+      "Debugged and resolved issues within the pre-release Balancer API",
+      "Implemented swap and pool create pages in the Berachain BEX",
+      "Integration and testing for updates to pool create contracts to enable single-tx joins",
+      "Ended a 4 month engagement as #2 contributor to the Berachain FE codebase"
+    ],
+    "tags": ["Ethereum", "Balancer", "React", "NodeJS", "NextJS", "Tailwind", "PostHog", "GraphQL", "IPFS", "ERC-20", "Viem", "Wagmi", "Vercel"]
+  },
+  {
+    "title": "Kaidro",
+    "url": "https://kaidro.com/",
+    "startDate": "March 2024",
+    "endDate": "October 2024",
+    "bullets": [
+      "Led the web team through Kaidro's major launches, including NFT mints, airdrops, and Play-to-Airdrop (P2A) campaigns.",
+      "Built and scaled web infrastructure to support 340,000+ Journal NFT mints and thousands of concurrent users around the world",
+      "Developed and optimized core web features for Spark Suit NFTs, Synergy lockups, and interactive user engagement tools.",
+      "Oversaw delivery of the Spin to Win web app with a three week turnaround",
+      "Integrated game authentication and account linking for Kaidro: Clan Battles Alpha playtests.",
+      "Architected and delivered event-driven queueing systems for tracking and rewarding player activity in real-time.",
+      "Executed high-velocity releases on tight deadlines, aligning with crypto market trends to maximize impact.",
+      "Grew the engagement from 2-4 people to support launch deadlines",
+      "Wrote and deployed smart contracts and managed on-chain infra"
+    ],
+    "tags": ["Gaming", "ERC-721", "AWS", "React", "NodeJS", "NextJS", "Tailwind", "Retool", "GraphQL", "PostgreSQL", "Subsquid", "Postman", "Docker", "Ronin", "Hardhat", "Foundry", "Viem", "Wagmi", "Vercel", "BullMQ"]
+  },
+  {
+    "title": "Fractionalized NFT on Blast",
+    "url": null,
+    "startDate": "March 2024",
+    "endDate": null,
+    "bullets": [
+      "Launched a token on Blast with the DN-404 standard",
+      "Delivered a client-side-only frontend and minting page in 2 weeks"
+    ],
+    "tags": ["DN-404", "Blast", "React", "Vercel", "Metamask"]
+  },
+  {
+    "title": "Novel L2 with Asset-Price Pegging",
+    "url": null,
+    "startDate": "December 2023",
+    "endDate": "March 2024",
+    "bullets": [
+      "Wrote core AMM smart contracts within a fork of Uniswap v3 with updated pool tick math to price assets using correlations to Pyth oracles",
+      "Setup an indexing service to feed FE graphs and plots",
+      "Setup basic infrastructure to verify and test AMM functionality",
+      "Deployment scripting and testnet/mainnet deployment of all core contracts"
+    ],
+    "tags": ["Layer 2", "AMM", "Solidity", "Hardhat", "Uniswap", "Smart Contracts"]
+  },
+  {
+    "title": "Supply Chain Optimization Company",
+    "url": null,
+    "startDate": "September 2023",
+    "endDate": "October 2023",
+    "bullets": [
+      "Conducted exploratory R&D solving an attribute-matching and scraping problem.",
+      "Distilled and presented findings weekly to non-technical stakeholders.",
+      "Advised the client on future steps and delivered clearly-documented Jupyter notebooks with well-formed heuristics for the problem."
+    ],
+    "tags": ["Supply Chain", "R&D", "Scraping", "Jupyter", "Hugging Face", "PyTorch", "Python", "Anomaly Detection", "Data Science"]
+  },
+  {
+    "title": "B2B Company with Internal Tooling",
+    "url": null,
+    "startDate": "August 2023",
+    "endDate": "September 2023",
+    "bullets": [
+      "Designed and built a Slack bot with integration into sales CRM and billing systems.",
+      "Implemented a design which satisfied client requirements despite API limitations."
+    ],
+    "tags": ["B2B", "Slack", "CRM", "Banking", "Automation", "Process Definition"]
+  },
+  {
+    "title": "Ambient Finance",
+    "url": "https://ambient.finance/",
+    "startDate": "March 2023",
+    "endDate": "August 2023",
+    "bullets": [
+      "Led frontend modernization efforts, ensuring a smooth and responsive user experience.",
+      "Refactored and optimized the frontend (Context API, UI/UX revamp) to improve maintainability and speed.",
+      "Identified and helped resolve critical scalability issues, de-risking the launch by improving indexing and chat functions",
+      "Contributed to onboarding documentation and codebase improvements, enhancing developer experience.",
+      "Helped Ambient Finance surpass $100M in TVL, supporting over $2.5B in trading volume and $4.25M in generated fees within months of launch.",
+      "Grew the engagement to Hypotenuse's largest with 6 engineers pre-launch."
+    ],
+    "tags": ["DEX", "Ethereum", "Liquidity", "Scalability", "React", "NodeJS", "NextJS", "Tailwind", "GraphQL", "PostgreSQL", "Python", "Go", "Server Sent Events"]
+  },
+  {
+    "title": "Social Media App",
+    "url": null,
+    "startDate": "December 2022",
+    "endDate": "March 2023",
+    "bullets": [
+      "Developed backend features to support a scalable social media event feed with swiping.",
+      "Audited and documented the codebase, improving developer onboarding and maintainability.",
+      "Enhanced event scoring mechanisms, fixing broken components and introducing novel inter-user-ranking improvements.",
+      "Built a self-serve portal for the product and operations teams to fine-tune the event feed algorithm and view metrics.",
+      "Laid the foundation for future ML features by logging critical scoring data and user interactions.",
+      "Led client interactions and scoped engineering work for myself and another developer.",
+      "Introduced engineering best practices to improve efficiency and team coordination during a multi-country launch."
+    ],
+    "tags": ["Social Media", "Jupyter", "Architecture", "MongoDB", "Node", "Typescript", "NestJS", "GCP", "Backend", "Scalability", "Machine Learning", "Event Feed"]
+  },
+  {
+    "title": "Highstreet Market",
+    "url": "https://highstreet.market/",
+    "startDate": "November 2021",
+    "endDate": "September 2022",
+    "bullets": [
+      "Led a team of 2-4 developers, delivering core infrastructure for Highstreet's Web3 marketplace.",
+      "Built a marketplace and multi-checkout system on the ERC-1155 NFT protocol to support phygital goods.",
+      "Launched three NFT series, including Animoca's virtual real estate and furniture offerings.",
+      "Developed systems to mint and link NFTs to physical goods, bridging digital and real-world assets.",
+      "Created a multi-SSO authentication system, allowing non-Web3 users to access the ecosystem.",
+      "Implemented an on-chain staking and rewards system for Highstreet NFTs, enhancing engagement and utility."
+    ],
+    "tags": ["NFTs", "ERC-721", "Marketplace", "Web3", "ERC-1155", "Authentication", "React", "Typescript", "Tailwind", "Phygital Goods", "SSO", "Staking"]
+  },
+  {
+    "title": "JobFunnel",
+    "url": "https://github.com/PaulMcInnis/JobFunnel",
+    "startDate": "2019",
+    "endDate": "Present",
+    "bullets": [
+      "Created an open-source job aggregation tool to streamline job searches with over 2000 stars and 230 forks at the time of writing.",
+      "Developed a web scraper that gathers job postings from multiple job boards.",
+      "Implemented deduplication, filtering, and blocking features to improve job search efficiency.",
+      "Supports job searching automation with CLI-based functionality.",
+      "Maintained and improved the project with community contributions."
+    ],
+    "tags": ["Python", "Web Scraping", "Automation", "Open Source", "Data Parsing", "BeautifulSoup", "Selenium", "Requests", "Data Filtering"]
+  }
+]

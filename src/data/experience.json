@@ -1,0 +1,97 @@
+[
+  {
+    "company": "Guardrail.ai",
+    "logo": "/img/guardrail-logo.png",
+    "role": "Founding Software Developer",
+    "startDate": "March 2025",
+    "endDate": "Present",
+    "bullets": [
+      "Built Response Actions, enabling automated on-chain execution in response to security guard alerts",
+      "Built a Transaction Screening service for pre-signing transaction validation via Fireblocks and API, with transaction simulation and webhook-based customer onboarding",
+      "Designed and launched DIY Guards, a Python-native custom guard system, in ~2 months, directly winning business from competitors",
+      "Prototyped and validated the DIY Guards design with a launch customer within 1 month",
+      "Built an AI-powered code writing assistant for DIY Guards and authored all documentation",
+      "Researched, designed, and shipped an AI/ML-powered Suspicious Transaction guard in 1.5 months with zero sev0 issues at launch",
+      "Suspicious Transaction guard reached 30% of all guard invocations at only 12% of execution time within two weeks, driving 3-4 high-value client sign-ons"
+    ],
+    "tags": ["Python", "FastAPI", "SQLAlchemy", "PostgreSQL", "TimescaleDB", "Redis", "Docker", "GCP", "Machine Learning", "AI", "Blockchain Security", "Solidity", "Web3", "Pydantic", "Alembic"]
+  },
+  {
+    "company": "Hypotenuse Labs",
+    "logo": "/img/hype-logo.png",
+    "role": "Senior, Staff Software Developer",
+    "startDate": "November 2021",
+    "endDate": "February 2025",
+    "bullets": [
+      "Delivering web2&3 projects for our <a href=\"https://hypotenuse.ca/about\" target=\"_blank\">hype</a> clients as a full-service software consultancy",
+      "Leading agile, full-stack web teams of 3-10 people in size",
+      "Roadmapping customer requirements and delivering on-time",
+      "Integrating web3 smart contracts into web2 frontends",
+      "Developing and improving machine learning services",
+      "Delivered essential software for 3 decentralized crypto exchanges",
+      "Planned and executed delivery for multiple key projects, including the two largest at Hypotenuse (Ambient and Highstreet)",
+      "Wrote marketing material and fine-tuned pitches for clients",
+      "Delivered constructive feedback to clients",
+      "Helped <a href=\"https://ambient.finance/\" target=\"_blank\">Ambient Finance</a> surpass $100M in TVL, supporting over $2.5B in trading volume and $4.25M in generated fees within months of launch.",
+      "Launched <a href=\"https://www.berachain.com/\" target=\"_blank\">Berachain</a>, a novel L1 on Ethereum",
+      "Delivered a <a href=\"https://hypotenuselabs.medium.com/case-study-plugging-into-highstreets-phygital-metaverse-cf30b4e2ca6d\" target=\"_blank\">Phygital goods marketplace</a> for Highstreet Market",
+      "Launched a token on Blast with the DN404 standard (see similar ERC404 standard)",
+      "Wrote core AMM smart contracts within a fork of Uniswap v3 with updated pool tick math to price assets using correlations to Pyth oracles",
+      "Conducted exploratory R&D solving an attribute-matching and scraping problem",
+      "Designed and built a slack-bot with integration into sales CRM and billing systems",
+      "Introduced engineering best practices to improve efficiency and team coordination during a multi-country launch of a social media app."
+    ],
+    "tags": ["Web3", "React", "NextJS", "NodeJS", "NestJS", "TypeScript", "Python", "Solidity", "GraphQL", "PostgreSQL", "MongoDB", "Redis", "Docker", "Kubernetes", "AWS", "GCP", "DeFi", "NFTs", "Uniswap", "Balancer", "Hardhat", "Viem", "Machine Learning"]
+  },
+  {
+    "company": "DarwinAI",
+    "logo": "/img/darwin-ai-logo.jpg",
+    "role": "Senior Platform Developer",
+    "startDate": "October 2018",
+    "endDate": "November 2021",
+    "bullets": [
+      "Developed a quantitative explainability (XAI) tool for object detection networks",
+      "Assisted with research and development problems central to GenSynth core-IP",
+      "Delivered networks with groundbreaking performance improvements",
+      "Low-level Tensorflow development and modification in-support of graph manipulation",
+      "Research and development work for purposes of improving platform capabilities",
+      "Catching and squashing complex bugs within our core IP implementation",
+      "Participated in <a href=\"https://github.com/lindawangg/COVID-Net\" target=\"_blank\">COVID-Net</a> initiative, a tool for identifying and quantifying COVID-19 infections within a chest X-Ray",
+      "Experience quantizing models for embedded deployment, including TPU accelerators."
+    ],
+    "tags": ["Explainability", "TensorFlow", "Python", "Keras", "PyTorch", "SQL", "MPI", "CUDA", "TensorFlowLite", "REST", "Coral"]
+  },
+  {
+    "company": "Rave Inc",
+    "logo": "/img/rave-logo.png",
+    "role": "Software Developer (AI)",
+    "startDate": "September 2017",
+    "endDate": "November 2018",
+    "bullets": [
+      "Development in support of <a href=\"https://rave.dj/\" target=\"_blank\">RaveDJ</a>, an A.I. DJ web-app",
+      "Designed a novel, state-of-the-art, neural network for song structural analysis",
+      "Music Information Retrieval (MIR) research in support of automated A.I. DJ app",
+      "Applied data science to quantify neural network performance in the product",
+      "Managed an annotation framework, training annotators and building parser tools",
+      "Deployed scalable inference and training APIs in Docker on Google Cloud",
+      "Worked with expert DJs to distill and technically define AI model heuristics"
+    ],
+    "tags": ["TensorFlow", "Python", "Kubernetes", "C", "MIR", "Dev-Ops", "Data Science", "Google Cloud"]
+  },
+  {
+    "company": "UWAFT",
+    "logo": "/img/uwaft-logo.jpeg",
+    "role": "Engineering Manager",
+    "startDate": "August 2015",
+    "endDate": "August 2017",
+    "bullets": [
+      "Responsible for Innovation and Electrical sub-teams",
+      "Advanced Vehicle Technology Competition (<a href=\"https://avtcseries.org/\" target=\"_blank\">AVTC</a>) for the conversion of a Camaro into a hybrid sports car",
+      "Engineering work in support of novel powertrain design, controls and simulation",
+      "Development of hardware and software platform for training object detection and tracking algorithms with Waterloo's autonomous vehicle research group",
+      "Design and implementation of all high and low-voltage subsystems including fusing",
+      "Responsible for numerous high-pressure, technical public speaking presentations"
+    ],
+    "tags": ["CANBus", "FEM", "NX", "Altium", "Simulation", "HV", "AVTC", "Object Tracking"]
+  }
+]
