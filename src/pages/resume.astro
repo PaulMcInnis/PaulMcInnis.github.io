@@ -1,0 +1,191 @@
+---
+import experience from '../data/experience.json';
+import education from '../data/education.json';
+import publications from '../data/publications.json';
+import social from '../data/social.json';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paul McInnis — Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #1a1a1a;
+        line-height: 1.45;
+        font-size: 10.5pt;
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: 0.5in 0.6in;
+      }
+
+      a { color: #2563eb; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+
+      /* Header */
+      .header { text-align: center; margin-bottom: 16px; }
+      .header h1 { font-size: 22pt; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 2px; }
+      .header .subtitle { font-size: 10.5pt; color: #555; margin-bottom: 6px; }
+      .header .contact { font-size: 9pt; color: #444; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+      .header .contact a { color: #444; }
+      .header .contact .sep { color: #bbb; }
+
+      /* Section */
+      .section { margin-bottom: 12px; }
+      .section-title {
+        font-size: 10pt;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        border-bottom: 1.5px solid #1a1a1a;
+        padding-bottom: 2px;
+        margin-bottom: 8px;
+      }
+
+      /* Experience entries */
+      .entry { margin-bottom: 8px; }
+      .entry-header { display: flex; justify-content: space-between; align-items: baseline; }
+      .entry-company { font-weight: 700; font-size: 10.5pt; }
+      .entry-dates { font-size: 9pt; color: #555; white-space: nowrap; }
+      .entry-role { font-style: italic; font-size: 10pt; color: #333; margin-bottom: 2px; }
+      .entry ul { padding-left: 16px; }
+      .entry li { margin-bottom: 1px; font-size: 10pt; }
+      .entry .tags { font-size: 8pt; color: #666; margin-top: 3px; }
+
+      /* Education */
+      .edu-degree { font-weight: 600; font-size: 10pt; }
+      .edu-school { font-size: 10pt; color: #333; }
+      .edu-dates { font-size: 9pt; color: #555; }
+      .edu-bullets { padding-left: 16px; font-size: 9.5pt; }
+      .edu-bullets li { margin-bottom: 1px; }
+
+      /* Publications */
+      .pub { margin-bottom: 5px; font-size: 9.5pt; }
+      .pub-title { font-weight: 600; }
+      .pub-authors { color: #444; font-size: 9pt; }
+      .pub-year { color: #666; font-size: 9pt; }
+
+      /* Print styles */
+      @media print {
+        body { padding: 0; margin: 0; max-width: none; -webkit-print-color-adjust: exact; }
+        @page { margin: 0.5in 0.6in; size: letter; }
+        a { color: #2563eb !important; }
+        .no-print { display: none !important; }
+        .entry, .pub { break-inside: avoid; }
+      }
+
+      /* Screen-only: subtle background and a print button */
+      @media screen {
+        html { background: #f0f0f0; }
+        body {
+          background: white;
+          box-shadow: 0 2px 20px rgba(0,0,0,0.12);
+          margin-top: 24px;
+          margin-bottom: 24px;
+          border-radius: 4px;
+        }
+        .print-btn {
+          position: fixed;
+          top: 16px;
+          right: 16px;
+          padding: 8px 20px;
+          background: #1a1a1a;
+          color: white;
+          border: none;
+          border-radius: 6px;
+          font-family: 'Inter', sans-serif;
+          font-size: 13px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+        .print-btn:hover { background: #333; }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="print-btn no-print" onclick="window.print()">Print / Save PDF</button>
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Paul McInnis</h1>
+      <div class="subtitle">Full-Stack · Web3 · Machine Learning</div>
+      <div class="contact">
+        {social.filter((link) => link.name !== 'Music').map((link, i, arr) => (
+          <>
+            <a href={link.url}>{link.name === 'Email' ? 'paulmcinnis99@gmail.com' : link.name === 'LinkedIn' ? 'linkedin.com/in/paul-mcinnis-7a63173b' : link.name === 'Github' ? 'github.com/PaulMcInnis' : link.url.replace('https://', '')}</a>
+            {i < arr.length - 1 && <span class="sep">·</span>}
+          </>
+        ))}
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="section">
+      <div class="section-title">Summary</div>
+      <p>
+        Full-stack engineer with 12+ years of experience spanning Web3, AI/ML, and distributed systems.
+        Led teams delivering DeFi platforms handling billions in trading volume, shipped ML-powered products from research to production,
+        and architected scalable infrastructure across crypto exchanges, NFT marketplaces, and L1/L2 ecosystems.
+      </p>
+    </div>
+
+    <!-- Experience -->
+    <div class="section">
+      <div class="section-title">Experience</div>
+      {experience.map((job) => (
+        <div class="entry">
+          <div class="entry-header">
+            <span class="entry-company">{job.company}</span>
+            <span class="entry-dates">{job.startDate} — {job.endDate}</span>
+          </div>
+          <div class="entry-role">{job.role}</div>
+          <ul>
+            {job.bullets.map((bullet) => (
+              <li set:html={bullet} />
+            ))}
+          </ul>
+          <div class="tags">{job.tags.join(' · ')}</div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education</div>
+      {education.map((school) => (
+        school.degrees.map((degree) => (
+          <div class="entry">
+            <div class="entry-header">
+              <span class="edu-degree">{degree.name}</span>
+              <span class="edu-dates">{degree.startYear} — {degree.endYear}</span>
+            </div>
+            <div class="edu-school">{school.school}</div>
+            <ul class="edu-bullets">
+              {degree.bullets.map((bullet) => (
+                <li set:html={bullet} />
+              ))}
+            </ul>
+          </div>
+        ))
+      ))}
+    </div>
+
+    <!-- Publications -->
+    <div class="section">
+      <div class="section-title">Publications & Patents</div>
+      {publications.map((pub) => (
+        <div class="pub">
+          <span class="pub-year">[{pub.year}]</span>{' '}
+          <a href={pub.url} class="pub-title">{pub.title}</a><br />
+          <span class="pub-authors">{pub.authors}</span>
+        </div>
+      ))}
+    </div>
+  </body>
+</html>
